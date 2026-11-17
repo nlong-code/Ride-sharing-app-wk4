@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Group 3 | Ride-Sharing App — Systems Analysis & Design</title>
+<title>Group 3 | Ride-Sharing App — Systems Analysis &amp; Design</title>
 <style>
 :root{
  --navy:#17365d;--blue:#2463a6;--teal:#159b9b;--sky:#eaf3fc;
@@ -106,29 +104,31 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
  <div class="section-kicker">Our group approach</div><h2>How We Work Together</h2>
  <p class="lead">We are developing the application in stages. Each weekly update builds on the work from the week before it. Team members take the lead in their assigned areas, then the group reviews how the pieces fit together.</p>
  <div class="grid">
-  <div class="card"><h4>1. Identify the need</h4><p>We start with the people who will use or support the app. We discuss what passengers, drivers, and administrators need the system to do.</p></div>
-  <div class="card"><h4>2. Agree on requirements</h4><p>We turn those needs into functional and non-functional requirements. These requirements give our group a shared direction for the design.</p></div>
-  <div class="card"><h4>3. Model the system</h4><p>We use use case diagrams, activity diagrams, context diagrams, architecture views, and DFDs to explain how the system and its users exchange information.</p></div>
-  <div class="card"><h4>4. Design and review</h4><p>We develop interface mockups, database entities, relationships, and a data dictionary. We compare these items with the requirements and revise anything that does not line up.</p></div>
+  <div class="card"><h4>1. Identifying the need of our users</h4><p>We will start with the users of the app, and discuss what passengers, drivers, and administrators need the system to do.</p></div>
+  <div class="card"><h4>2. Agreement of requirements</h4><p>We turn needs into functional/non-functional requirements. These requirements give our group a shared direction for the design.</p></div>
+  <div class="card"><h4>3. Model the system</h4><p>We'll start with Case Diagrams, Activity Diagrams, Context Diagrams, Architecture Views &amp; Data Flow Diagrams (DFDs) in order to illustrate how users of this System communicate with one another through data..</p></div>
+  <div class="card"><h4>4. Design and review process</h4><p>When developing an interface mockup; entity diagrams for the database; entity-to-entity relationships for the database; and a data dictionary, we can then check each of those against the original requirements document to make sure they are aligned and make revisions as needed.</p></div>
  </div>
- <h3>How we coordinate the work</h3>
- <p>Darius's project coordination helps the group keep track of deadlines and review progress. Norma's requirements work helps us check that design choices connect to stakeholder needs. Yusuke's modeling work helps show the system processes visually. These areas overlap, so our diagrams, written explanations, and design choices should be reviewed as a team before we treat them as final.</p>
+ <h3>Project Coordination and Group Management</h3>
+ <p>Our team will use Darius’s project coordination as an organizational tool to ensure all group members meet their deadlines and to monitor and assess progress on our project. 
+Norma’s Requirements Work will help ensure that our design decisions are tied to stakeholders' needs and wants.
+Yusuke’s Modeling work will allow us to visually represent how the different parts of the system process information. The three areas of responsibility have some overlapping aspects, thus it is important for the entire team to review our diagrams, written descriptions and design selections prior to considering them complete or final.</p>
  <p>For each weekly submission, our group can check that the written explanation matches the diagrams, that the diagrams use the same process names, and that the design still supports the requirements we identified earlier. If the group changes a requirement, we should also check whether the DFD, ERD, interface mockups, or data dictionary need to be updated.</p>
 </section>
 
 <section id="app-process">
  <div class="section-kicker">Proposed application workflow</div><h2>How Our Ride-Sharing App Is Intended to Work</h2>
- <p class="lead">The following walkthrough brings the group's Week 2 requirements and activity-diagram descriptions together. It explains the planned passenger and driver experience from beginning to end.</p>
+ <p class="lead">The following walkthrough brings the group's Week 2 requirements and activity-diagram descriptions together. This diagram explains the planned passenger and driver experience from beginning to end.</p>
  <ol>
-  <li><strong>Account access:</strong> A passenger or driver creates an account or logs in. The system checks the account information and gives the user access to the appropriate features.</li>
-  <li><strong>Passenger enters trip details:</strong> The passenger enters a pickup location and destination. The app uses mapping/GPS information to help estimate the route, distance, and travel time.</li>
-  <li><strong>Fare is shown before booking:</strong> The app displays an upfront fare breakdown. The passenger can confirm the request or cancel it. If the passenger changes the destination or adds a stop, the app calculates a revised fare and asks for approval.</li>
-  <li><strong>Available drivers are contacted:</strong> After the passenger confirms, the app searches for an available driver and sends the ride details. The driver can accept or decline the request.</li>
-  <li><strong>The passenger receives the result:</strong> If a driver accepts, the passenger receives confirmation and can track the driver's location and estimated arrival. If the driver declines, the app continues looking for another available driver.</li>
-  <li><strong>The trip is completed:</strong> The driver updates the trip status as the ride progresses and marks it completed at the destination.</li>
-  <li><strong>Payment and feedback:</strong> The app sends the agreed fare to the external payment processor. The passenger receives payment confirmation or a notice if payment fails, with an option to retry or request support. After payment is confirmed, the passenger can receive a receipt, rate the trip, or report an issue.</li>
+  <li><strong>Account access:</strong>A passenger or driver has to create an account for themselves, and log in. The app will verify their account and give them full access to all of the apps features. </li>
+  <li><strong>Passenger enters trip details:</strong>The passenger enters a pick up location and where they want to be dropped off. The app provides a possible route, estimates how long it should take to get from point A to point B, and an estimate of the total miles traveled.</li>
+  <li><strong>Fare is shown before booking:</strong>The app shows the estimated cost of the ride before you book your ride. The passenger may confirm their booking or cancel their booking. Should the passenger decide to go somewhere else than what was originally booked, the passenger will have to approve a new quote based on the changed drop-off location and/or added stops. </li>
+  <li><strong>Available drivers are contacted:</strong>Once you have approved your booking, the app looks for a driver that is currently available. Once an available driver is found, the app will send the driver the complete details of your ride. The driver then either approves or rejects the ride. </li>
+  <li><strong>The passenger receives the result:</strong>If the driver approves your ride, the passenger will receive a notification confirming acceptance and providing the ability to view the location of their driver and an estimated time of arrival. If the driver rejects your ride, the app will continue searching for another available driver. </li>
+  <li><strong>The trip is completed:</strong>As the ride is progressing (i.e., as the driver reaches each stop) the driver can update the trip status, finally marking it as completed when arriving at the final destination. </li>
+  <li><strong>Payment and feedback:</strong>After receiving confirmation that the agreed upon amount has been sent through to the external payment processing company; the passenger will receive notification if payment was made successfully or if there were issues making payment. The passenger will also receive an opportunity to retry payment or contact customer service. Once payment is confirmed, the passenger will have access to a receipt, rating options for their trip experience, and reporting options should something happen during/after their trip.</li>
  </ol>
- <div class="callout"><strong>Important design rule:</strong> The fare agreed to before the ride should remain fixed unless the passenger changes the trip and approves a revised price. The app coordinates payment through a third-party payment processor; it does not need to store raw card numbers or security codes.</div>
+ <div class="callout"><strong>Important design rule:</strong> Unless you are changing your trip and approve of an amended fare, the original fare which is determined prior to the start of your trip will be your charge for the ride. The app coordinates payment through a third-party payment processor; it does not need to store raw card numbers or security codes.</div>
 </section>
 
 <section id="week1">
@@ -150,30 +150,30 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
 <section id="week2">
  <div class="section-kicker">Week 2 · System analysis artifacts</div><h2>Week 2: System Analysis</h2>
  <h3>1. Functional and Non-Functional Requirements</h3>
- <p>Our team continued developing the requirements using the stakeholder needs identified earlier. The Week 2 update records 11 functional requirements and 6 non-functional requirements. Together, these cover account registration, pickup and destination details, upfront fare pricing, ride requests, driver acceptance, trip tracking, payments, ratings and support, ride history, driver earnings, administrator functions, security, usability, reliability, accessibility, performance, and data privacy. We treated these as the working requirements to guide the diagrams and design.</p>
+ <p>Our team began to develop the requirements for the project based on the stakeholder needs we had previously determined. We recorded 11 functional requirements and 6 nonfunctional in our week two updates. All of the above functional and nonfunctional requirements (total) include account registration, pickup and drop off information; a price quote prior to accepting an actual fare; requesting a ride; a driver accepting or declining a request; the ability to track your trips; payment processing; rating drivers, customers, etc.; customer service options and a support area; viewing a ride history; how much money a driver is making per month/week/etc; what admin can do with their functions for this application; Security, usability, reliability, accessibility, performance, and Data Privacy.</p>
  <h3>2. Use Case Diagrams</h3>
- <p>Our use case work identifies passengers, drivers, and system administrators as the main actors. We mapped the actions each actor needs to perform, including requesting rides, accepting or declining requests, making payments, viewing trip history, managing accounts, and reviewing reported issues. The use case model gives the group a shared picture of who uses each part of the system.</p>
+ <p>We identified our primary users (passengers, drivers, and system administrators) through our use-case development process. Through this development we also mapped out what each user must do when using our application (i.e. requesting a ride; accept/deny the request; make payment; view your trip history; manage your account; review any issues you may have with your ride). We identified our primary users (passengers, drivers, and system administrators) through our use-case development process. Through this development we also mapped out what each user must do when using our application (i.e. requesting a ride; accept/deny the request; make payment; view your trip history; manage your account; review any issues you may have with your ride).. The use case model gives the group a shared picture of who uses each part of the system.</p>
  <h3>3. Activity Diagrams</h3>
  <p>Our group described three main activity flows: a passenger requests a ride, a driver accepts or declines the request, and a trip is completed with payment processing. We included the decisions that affect the next step. For example, if a driver declines, the system continues searching; if payment fails, the passenger is notified and can retry or request support.</p>
  <h3>4. Begin System Context Diagram</h3>
- <p>We began the context diagram by placing the Ride-Sharing App at the center and identifying the external entities that exchange information with it: passengers, drivers, mapping/GPS services, payment processing services, and system administrators. This gives our group a clear system boundary before breaking the application into smaller processes.</p>
- <div class="callout">Our group should keep the original draw.io diagrams with the written explanation when the assignment requires the visual artifacts. The explanation here describes the purpose of each model; it does not replace an original diagram.</div>
+ <p>We placed the Ride-Sharing App at the center and identifying the external entities that exchange information with it: passengers, drivers, mapping/GPS services, payment processing services, and system administrators. This gives our group a clear system boundary before breaking the application into smaller processes.</p>
+ <div class="callout">Our group will keep the original draw.io diagrams with the written explanation when the assignment requires the visual artifacts. The explanation describes the purpose of each model; it does not replace an original diagram.</div>
 </section>
 
 <section id="week3">
  <div class="section-kicker">Week 3 · High-level design artifacts</div><h2>Week 3: High-Level Design</h2>
  <h3>1. System Context Diagram</h3>
- <p>We carried the Week 2 context diagram into the Week 3 design work and refined how the main users and external services connect to the application. As a group, we use this diagram to check that the system boundary includes passenger and driver activity as well as mapping and payment services.</p>
+ <p>Our group carried the Week 2 context diagram into the Week 3 design work and refined how the main users and external services connect to the application. As a group, we use this diagram to check that the system boundary includes passenger and driver activity as well as mapping and payment services.</p>
  <h3>2. High-Level Architecture Diagram</h3>
  <p>Our high-level architecture organizes the proposed system into user interfaces, an application/server layer, core services, data storage, and external integrations. The passenger and driver interfaces connect to application functions such as account management, ride management, and payment coordination. The group uses this view to explain how the major parts fit together without selecting a specific technology stack yet.</p>
  <div class="diagram">
   <svg viewBox="0 0 960 330" role="img" aria-label="High-level ride sharing application architecture">
-   <defs><marker id="arrA" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#52677f"/></marker></defs>
+   <defs><marker id="arrA" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#52677f"></path></marker></defs>
    <g fill="#eaf3fc" stroke="#2463a6" stroke-width="2">
-    <rect x="20" y="115" width="150" height="72" rx="10"/><rect x="20" y="220" width="150" height="72" rx="10"/>
-    <rect x="250" y="155" width="175" height="82" rx="10"/>
-    <rect x="500" y="45" width="180" height="64" rx="10"/><rect x="500" y="135" width="180" height="64" rx="10"/><rect x="500" y="225" width="180" height="64" rx="10"/>
-    <rect x="760" y="155" width="170" height="82" rx="10"/>
+    <rect x="20" y="115" width="150" height="72" rx="10"></rect><rect x="20" y="220" width="150" height="72" rx="10"></rect>
+    <rect x="250" y="155" width="175" height="82" rx="10"></rect>
+    <rect x="500" y="45" width="180" height="64" rx="10"></rect><rect x="500" y="135" width="180" height="64" rx="10"></rect><rect x="500" y="225" width="180" height="64" rx="10"></rect>
+    <rect x="760" y="155" width="170" height="82" rx="10"></rect>
    </g>
    <g fill="#17365d" font-size="15" font-weight="bold" text-anchor="middle">
     <text x="95" y="145">Passenger</text><text x="95" y="165">Application</text>
@@ -183,7 +183,7 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
     <text x="845" y="188">Database</text><text x="845" y="209">Storage</text>
    </g>
    <g stroke="#52677f" stroke-width="2" fill="none" marker-end="url(#arrA)">
-    <path d="M170 150L250 185"/><path d="M170 255L250 215"/><path d="M425 180L500 78"/><path d="M425 195L500 167"/><path d="M425 210L500 255"/><path d="M680 78L760 170"/><path d="M680 167L760 185"/><path d="M680 255L760 215"/>
+    <path d="M170 150L250 185"></path><path d="M170 255L250 215"></path><path d="M425 180L500 78"></path><path d="M425 195L500 167"></path><path d="M425 210L500 255"></path><path d="M680 78L760 170"></path><path d="M680 167L760 185"></path><path d="M680 255L760 215"></path>
    </g>
   </svg>
  </div>
@@ -196,19 +196,19 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
 
 <section id="week4">
  <div class="section-kicker">Week 4 · Detailed design artifacts</div><h2>Week 4: Detailed Design</h2>
- <p class="lead">During Week 4, our group builds on the Week 3 design work and adds more detail. We are checking how information moves through the app, how database records connect, what passengers and drivers see on their screens, and how the main data fields should be defined. These items need to stay consistent with the requirements and process models we already developed.</p>
+ <p class="lead">During Week 4, our group builds on the Week 3 design work and adds more detail. We are checking how information moves through the app, how database records connect, what passengers and drivers see on their screens, and how the main data fields should be defined.</p>
 
  <h3>1. Complete Data Flow Diagrams</h3>
- <p>Our detailed DFD expands the processes we identified in Week 3. It shows how passenger and driver information enters the system, how ride requests are handled, how drivers are matched, how trip progress is tracked, and how payment results return from the external processor. As a group, we use the DFD to check that each major process has the information it needs and that the data stores support the work.</p>
+ <p>Our DFD shows how passenger and driver information enters the system, how ride requests are handled, matched, trip progress is tracked, and how payment results return from the external processor. As a group, we use the DFD to check that each major process has the information it needs and that the data stores support the work.</p>
  <div class="diagram">
  <svg viewBox="0 0 1050 560" role="img" aria-label="Detailed Level 1 data flow diagram">
-  <defs><marker id="arrD" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#52677f"/></marker></defs>
-  <g fill="#eaf3fc" stroke="#2463a6" stroke-width="2"><rect x="20" y="220" width="145" height="70" rx="9"/><rect x="885" y="220" width="145" height="70" rx="9"/></g>
+  <defs><marker id="arrD" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#52677f"></path></marker></defs>
+  <g fill="#eaf3fc" stroke="#2463a6" stroke-width="2"><rect x="20" y="220" width="145" height="70" rx="9"></rect><rect x="885" y="220" width="145" height="70" rx="9"></rect></g>
   <g fill="#17365d" text-anchor="middle" font-weight="bold" font-size="16"><text x="92" y="250">Passenger</text><text x="92" y="272" font-size="12">External entity</text><text x="957" y="250">Driver</text><text x="957" y="272" font-size="12">External entity</text></g>
   <g fill="#fff" stroke="#159b9b" stroke-width="2">
-   <rect x="220" y="65" width="180" height="70" rx="11"/><rect x="455" y="65" width="190" height="70" rx="11"/>
-   <rect x="220" y="220" width="180" height="70" rx="11"/><rect x="455" y="220" width="190" height="70" rx="11"/>
-   <rect x="340" y="370" width="190" height="70" rx="11"/>
+   <rect x="220" y="65" width="180" height="70" rx="11"></rect><rect x="455" y="65" width="190" height="70" rx="11"></rect>
+   <rect x="220" y="220" width="180" height="70" rx="11"></rect><rect x="455" y="220" width="190" height="70" rx="11"></rect>
+   <rect x="340" y="370" width="190" height="70" rx="11"></rect>
   </g>
   <g fill="#17365d" text-anchor="middle" font-weight="bold" font-size="14">
    <text x="310" y="94">1.0 User</text><text x="310" y="114">Registration</text>
@@ -217,15 +217,15 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
    <text x="550" y="249">4.0 Payment</text><text x="550" y="269">Processing</text>
    <text x="435" y="399">5.0 Ride</text><text x="435" y="419">Completion</text>
   </g>
-  <g fill="#fff4df" stroke="#d18b2e" stroke-width="2"><rect x="735" y="65" width="120" height="65" rx="9"/><rect x="735" y="370" width="120" height="65" rx="9"/></g>
+  <g fill="#fff4df" stroke="#d18b2e" stroke-width="2"><rect x="735" y="65" width="120" height="65" rx="9"></rect><rect x="735" y="370" width="120" height="65" rx="9"></rect></g>
   <g fill="#81530f" text-anchor="middle" font-size="13" font-weight="bold"><text x="795" y="92">Mapping / GPS</text><text x="795" y="113" font-size="11">Location service</text><text x="795" y="397">Payment</text><text x="795" y="418" font-size="11">Provider</text></g>
-  <rect x="350" y="485" width="170" height="58" rx="8" fill="#f0f4f8" stroke="#52677f" stroke-width="2"/>
+  <rect x="350" y="485" width="170" height="58" rx="8" fill="#f0f4f8" stroke="#52677f" stroke-width="2"></rect>
   <g fill="#17365d" text-anchor="middle" font-size="13" font-weight="bold"><text x="435" y="508">D1: Application</text><text x="435" y="528">Database</text></g>
   <g stroke="#52677f" stroke-width="2" fill="none" marker-end="url(#arrD)">
-   <path d="M165 235L220 260"/><path d="M165 230L455 100"/><path d="M400 100L455 100"/>
-   <path d="M550 135L550 220"/><path d="M455 255L400 255"/><path d="M645 255L885 255"/>
-   <path d="M645 235L735 400"/><path d="M795 130L645 220"/><path d="M735 400L530 400"/>
-   <path d="M435 440L435 485"/><path d="M310 290L390 370"/><path d="M550 290L480 370"/><path d="M885 275L530 410"/>
+   <path d="M165 235L220 260"></path><path d="M165 230L455 100"></path><path d="M400 100L455 100"></path>
+   <path d="M550 135L550 220"></path><path d="M455 255L400 255"></path><path d="M645 255L885 255"></path>
+   <path d="M645 235L735 400"></path><path d="M795 130L645 220"></path><path d="M735 400L530 400"></path>
+   <path d="M435 440L435 485"></path><path d="M310 290L390 370"></path><path d="M550 290L480 370"></path><path d="M885 275L530 410"></path>
   </g>
   <g fill="#52677f" font-size="11"><text x="172" y="215">Account details</text><text x="310" y="160">User data</text><text x="565" y="175">Pickup / destination</text><text x="700" y="240">Ride offer</text><text x="650" y="345">Payment details</text><text x="465" y="470">Ride and payment records</text></g>
  </svg></div>
@@ -235,10 +235,10 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
   <div class="card"><h4>External services</h4><p>Mapping/GPS supports location information; the payment provider processes payment.</p></div>
   <div class="card"><h4>Data storage</h4><p>Stores account, ride, driver assignment, and payment status records.</p></div>
  </div>
- <div class="callout">DFD notation note: rectangles represent external entities, rounded process boxes represent system processes, and the database represents stored information. In a formal DFD, each arrow should be labeled with the exact data flow it carries.</div>
+ <div class="callout">Note: rectangles represent external entities, rounded process boxes represent system processes, and the database represents stored information. In formal DFDs, each arrow should be labeled with the exact data flow it carries.</div>
 
  <h3>2. Develop Entity-Relationship Diagram (ERD)</h3>
- <p>Our proposed ERD gives the group a shared view of the main records the application may need, including passengers, drivers, rides, payments, and locations. Primary keys identify each record, while foreign keys connect related records. We should review the proposed relationships together before treating this model as final.</p>
+ <p>Our ERD gives the group a view of the records the application may need, including passengers, drivers, rides, payments, and locations. Primary keys identify each record, while foreign keys connect related records. We will review the proposed relationships together before treating this model as final.</p>
  <div class="entity-grid">
   <div class="entity"><h4>PASSENGER</h4><ul><li>PassengerID <span class="key">PK</span></li><li>Name</li><li>Email</li><li>Phone</li></ul></div>
   <div class="entity"><h4>DRIVER</h4><ul><li>DriverID <span class="key">PK</span></li><li>Name</li><li>Email</li><li>Phone</li><li>Availability</li></ul></div>
@@ -256,10 +256,10 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
  <div class="callout teal"><strong>Database design decision to confirm:</strong> This draft uses one payment record per ride and allows a ride to have a driver assignment after matching. The group should confirm whether it needs to support multiple payment attempts or unassigned rides before treating this as final.</div>
 
  <h3>3. Finalize User Interface Designs</h3>
- <p>Our group refined the Week 3 screen concepts so the main tasks are easier to follow. The passenger can enter trip details, review the upfront fare, and track the assigned driver. The driver can review a request and accept or decline it. We kept the fare visible before confirmation because transparent pricing is one of the requirements our group emphasized.</p>
+ <p>Our user interface design screen allows the passenger can enter trip details, review the upfront fare, and track the assigned driver. The driver can review a request and accept or decline it. The fare is visible before confirmation because transparent pricing is one of the requirements our group emphasized.</p>
  <div class="screens">
-  <div class="screen-card"><div class="phone"><div class="phonebar"><span>9:41</span><span>● ● ●</span></div><div class="appname">Where are you going?</div><div class="field">● Pickup location<br><strong>Current location</strong></div><div class="field">⌖ Destination<br><strong>Enter destination</strong></div><div class="map"><span class="pin a">📍</span><span class="pin b">📍</span></div><div class="btn">Find a ride</div></div><strong>Passenger Home</strong><p class="caption">Enter pickup and destination details.</p></div>
-  <div class="screen-card"><div class="phone"><div class="phonebar"><span>9:41</span><span>● ● ●</span></div><div class="appname">Review your ride</div><div class="field">Pickup: Current location</div><div class="field">Destination: Selected address</div><div class="fare">Fixed upfront fare<strong>$18.50</strong>Example display only</div><div class="btn">Confirm ride</div><div class="btn outline">Go back</div></div><strong>Fare Confirmation</strong><p class="caption">Review the fare before booking.</p></div>
+  <div class="screen-card"><div class="phone"><div class="phonebar"><span>9:41</span><span>● ● ●</span></div><div class="appname">Where are you going?</div><div class="field">● Pickup location<br><strong>Current location</strong></div><div class="field">⌖ Destination<br><strong>Enter destination</strong></div><div class="map"><span class="pin a">📍</span><span class="pin b">📍</span></div><div class="btn">Find a ride</div></div><strong>Passenger Home</strong><p class="caption">Enter pickup &amp; destination details.</p></div>
+  <div class="screen-card"><div class="phone"><div class="phonebar"><span>9:41</span><span>● ● ●</span></div><div class="appname">Review your ride</div><div class="field">Pickup: Current location</div><div class="field">Destination: Selected address</div><div class="fare">Fixed upfront fare<strong>$18.50</strong>Example display only</div><div class="btn">Confirm ride</div><div class="btn outline">Go back</div></div><strong>Fare Confirmation</strong><p class="caption">Review the fare before trip.</p></div>
   <div class="screen-card"><div class="phone"><div class="phonebar"><span>9:41</span><span>● ● ●</span></div><div class="appname">Your driver is on the way</div><div class="map"><span class="pin a">🚗</span><span class="pin b">📍</span></div><div class="field"><strong>Driver assigned</strong><br>Driver and vehicle details</div><div class="field">Estimated arrival: 5 minutes</div><div class="btn">Contact driver</div></div><strong>Driver Tracking</strong><p class="caption">View driver and trip progress.</p></div>
   <div class="screen-card"><div class="phone"><div class="phonebar"><span>9:41</span><span>● ● ●</span></div><div class="appname">New ride request</div><div class="field">Pickup<br><strong>123 Main Street</strong></div><div class="field">Drop-off<br><strong>45 Market Avenue</strong></div><div class="fare">Trip fare<strong>$18.50</strong>Example display only</div><div class="btn green">Accept ride</div><div class="btn outline">Decline</div></div><strong>Driver Request</strong><p class="caption">Review trip details and accept or decline.</p></div>
  </div>
@@ -303,5 +303,5 @@ footer{text-align:center;color:var(--muted);padding:30px 15px;font-size:.85rem}
 </section>
 </main>
 <footer>Group 3 · Ride-Sharing App Project · Systems Analysis and Design</footer>
-</body>
-</html>
+
+</body></html>
